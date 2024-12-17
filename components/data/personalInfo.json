@@ -1,41 +1,39 @@
 {
-    "title": "Harry Potter",
-    "name": "Harry James Potter",
-    "domain":"https://nextjs-academic-theme.vercel.app/",
-    "copyright":"harrypotter.me",
-    "socialMedia": {
-        "Twitter": "https://twitter.com/",
-        "LinkedIn": "https://www.linkedin.com/",
-        "GoogleScholar": "https://scholar.google.com/"
+  "title": "Harsh Muriki",
+  "name": "Harsh Muriki",
+  "domain": "https://harshmuriki.com/",
+  "copyright": "harshmuriki.com",
+  "socialMedia": {
+    "Twitter": "https://x.com/Harshmuriki24",
+    "LinkedIn": "https://www.linkedin.com/in/venkata-harsh-muriki/",
+    "GoogleScholar": "https://scholar.google.com/citations?user=Q9a5nPkAAAAJ&hl=en"
+  },
+  "about": {
+    "year": "1st-year",
+    "department": {
+      "name": "Robotics",
+      "link": "https://research.gatech.edu/robotics"
     },
-    "about": {
-        "year": "7th-year",
-        "department": {
-            "name": "Gryffindor",
-            "link": "https://harrypotter.fandom.com/wiki/Gryffindor"
-        },
-        "college": {
-            "name": "Hogwarts School of Witchcraft and Wizardry",
-            "link": "https://harrypotter.fandom.com/wiki/Hogwarts_School_of_Witchcraft_and_Wizardry"
-        },
-        "advisor": {
-            "name": "Albus Dumbledor",
-            "link": "https://harrypotter.fandom.com/wiki/Albus_Dumbledore"
-        },
-        "email": "harrypotter AT MyUniversity",
-        "interest": "Defense against Dark Arts Spell; Dark Creatures"
+    "college": {
+      "name": "Georgia Tech",
+      "link": "https://gatech.edu/"
     },
-    "love": "https://harrypotter.fandom.com/wiki/James_and_Lily_Potter",
-    "education": [
-        {
-            "name": "The Auror Department(2007-2008, Visiting Scholar)",
-            "link": "https://harrypotter.fandom.com/wiki/British_Auror_Office"
-        },
-        {
-            "name": "Hogwarts Primary University(1911-1988, Bachelor's in Magic)",
-            "link": "https://harrypotter.fandom.com/wiki/Hogwarts_School_of_Witchcraft_and_Wizardry"
-        }
-    ]
-
-
+    "advisor": {
+      "name": "Sonia Chernova",
+      "link": "https://faculty.cc.gatech.edu/~chernova/"
+    },
+    "email": "vmuriki3@gatech.edu",
+    "interest": "Defense against Dark Arts Spell; Dark Creatures"
+  },
+  "love": "https://harrypotter.fandom.com/wiki/James_and_Lily_Potter",
+  "education": [
+    {
+      "name": "The Auror Department(2007-2008, Visiting Scholar)",
+      "link": "https://harrypotter.fandom.com/wiki/British_Auror_Office"
+    },
+    {
+      "name": "Hogwarts Primary University(1911-1988, Bachelor's in Magic)",
+      "link": "https://harrypotter.fandom.com/wiki/Hogwarts_School_of_Witchcraft_and_Wizardry"
+    }
+  ]
 }

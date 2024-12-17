@@ -1,106 +1,43 @@
 [
-	{
-		"id": 5,
-		"author": "P.Harry, A.Dumbledor",
-		"title": "Towards Generalized Defensing Against the Dark Arts Spells",
-		"conference": "In Proc of ACM Conference of Magic, Hogwarts Owlery, England.",
-		"links": [
-			{
-				"name": "pdf",
-				"url": ""
-			},
-			{
-				"name": "slides",
-				"url": ""
-			},
-			{
-				"name": "video",
-				"url": ""
-			}
-		]
-	},
+  {
+    "id": 5,
+    "author": "Harsh Muriki, Hong Ray Teo, Ved Sengupta, and Ai-Ping Hu",
+    "title": "Robotic Phenotyping for Small-Scale Urban Farms",
+    "conference": "2025 IEEE International Conference on Robotics and Automation (ICRA) in Atlanta, USA",
+    "links": [
+      {
+        "name": "pdf",
+        "url": ""
+      },
+      {
+        "name": "status",
+        "url": "Under Review"
+      }
+    ]
+  },
 
-	{
-		"id": 4,
-		"author": "P.Harry, A.Dumbledor",
-		"title": "Rethinking Defensing Against the Dark Arts Spells",
-		"conference": "In Proc of ACM Conference of Magic, Hogwarts Owlery, England.",
-		"links": [
-			{
-				"name": "pdf",
-				"url": ""
-			},
-			{
-				"name": "slides",
-				"url": ""
-			},
-			{
-				"name": "video",
-				"url": ""
-			}
-		]
-	},
+  {
+    "id": 4,
+    "author": "Gerry Chen, Harsh Muriki",
+    "title": "A hybrid cable-driven robot for non-destructive leafy plant monitoring and mass estimation using structure from motion",
+    "conference": "2023 IEEE International Conference on Robotics and Automation (ICRA) in London, UK",
+    "links": [
+      {
+        "name": "pdf",
+        "url": "https://arxiv.org/pdf/2209.08690"
+      },
+      {
+        "name": "video",
+        "url": "https://youtu.be/D3NuSUnuYfk"
+      }
+    ]
+  },
 
-	{
-		"id": 3,
-		"author": "P.Harry, A.Dumbledor",
-		"title": "Pushing the Limits of Defensing Against the Dark Arts Spells",
-		"conference": "In Proc of ACM Conference of Magic, Hogwarts Owlery, England.",
-		"links": [
-			{
-				"name": "pdf",
-				"url": ""
-			},
-			{
-				"name": "slides",
-				"url": ""
-			},
-			{
-				"name": "video",
-				"url": ""
-			}
-		]
-	},
-
-	{
-		"id": 2,
-		"author": "P.Harry, A.Dumbledor",
-		"title": "Defensing Against the Dark Arts Spells based on Reductor Curse",
-		"conference": "In Proc of ACM Conference of Magic, Hogwarts Owlery, England.",
-		"links": [
-			{
-				"name": "pdf",
-				"url": ""
-			},
-			{
-				"name": "slides",
-				"url": ""
-			},
-			{
-				"name": "video",
-				"url": ""
-			}
-		]
-	},
-
-	{
-		"id": 1,
-		"author": "P.Harry, A.Dumbledor",
-		"title": "A Survey of Defensing Against the Dark Arts Spells",
-		"conference": "In Proc of ACM Conference of Magic, Hogwarts Owlery, England.",
-		"links": [
-			{
-				"name": "pdf",
-				"url": ""
-			},
-			{
-				"name": "slides",
-				"url": ""
-			},
-			{
-				"name": "video",
-				"url": ""
-			}
-		]
-	}
+  {
+    "id": 3,
+    "author": "Abigail Cohen, Harsh Muriki, Yongsheng Chen",
+    "title": "Multimodal data fusion with hyperspectral and RGB data for nutrient prediction in hydroponic lettuce",
+    "conference": "",
+    "links": []
+  }
 ]
