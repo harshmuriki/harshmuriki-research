@@ -1,22 +1,5 @@
 [
   {
-    "id": 5,
-    "author": "Harsh Muriki, Hong Ray Teo, Ved Sengupta, and Ai-Ping Hu",
-    "title": "Robotic Phenotyping for Small-Scale Urban Farms",
-    "conference": "2025 IEEE International Conference on Robotics and Automation (ICRA) in Atlanta, USA",
-    "links": [
-      {
-        "name": "pdf",
-        "url": ""
-      },
-      {
-        "name": "status",
-        "url": "Under Review"
-      }
-    ]
-  },
-
-  {
     "id": 4,
     "author": "Gerry Chen, Harsh Muriki",
     "title": "A hybrid cable-driven robot for non-destructive leafy plant monitoring and mass estimation using structure from motion",
@@ -34,10 +17,28 @@
   },
 
   {
+    "id": 5,
+    "author": "Harsh Muriki, Hong Ray Teo, Ved Sengupta, and Ai-Ping Hu",
+    "title": "Robotic Phenotyping for Small-Scale Urban Farms",
+    "conference": "2025 IEEE International Conference on Robotics and Automation (ICRA) in Atlanta, USA",
+    "links": [
+      {
+        "name": "status",
+        "url": "Under Review"
+      }
+    ]
+  },
+
+  {
     "id": 3,
     "author": "Abigail Cohen, Harsh Muriki, Yongsheng Chen",
     "title": "Multimodal data fusion with hyperspectral and RGB data for nutrient prediction in hydroponic lettuce",
     "conference": "",
-    "links": []
+    "links": [
+      {
+        "name": "status",
+        "url": "In Progress"
+      }
+    ]
   }
 ]

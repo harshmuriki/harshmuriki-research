@@ -29,6 +29,11 @@ const About = (): JSX.Element => {
               {" "}
               {personalInfo.about.advisor.name}.{" "}
             </ExtLink>
+            I am also working with
+            <ExtLink href={personalInfo.about.graadvisor.link}>
+              {" "}
+              {personalInfo.about.graadvisor.name}.{" "}
+            </ExtLink>
             <br />
             <a className="text-sm">✉️ {personalInfo.about.email}</a>
           </p>

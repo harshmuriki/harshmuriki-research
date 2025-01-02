@@ -22,18 +22,26 @@
       "name": "Sonia Chernova",
       "link": "https://faculty.cc.gatech.edu/~chernova/"
     },
+    "graadvisor": {
+      "name": "Yongsheng Chen",
+      "link": "https://newcenter.ce.gatech.edu/"
+    },
     "email": "vmuriki3@gatech.edu",
-    "interest": "Defense against Dark Arts Spell; Dark Creatures"
+    "interest": "Human-Robot Interaction, Robot Learning"
   },
   "love": "https://harrypotter.fandom.com/wiki/James_and_Lily_Potter",
   "education": [
     {
-      "name": "The Auror Department(2007-2008, Visiting Scholar)",
-      "link": "https://harrypotter.fandom.com/wiki/British_Auror_Office"
+      "name": "Georgia Institute Of Technology",
+      "link": "https://www.gatech.edu",
+      "location": "Atlanta, GA",
+      "level": "BS in Computer Science"
     },
     {
-      "name": "Hogwarts Primary University(1911-1988, Bachelor's in Magic)",
-      "link": "https://harrypotter.fandom.com/wiki/Hogwarts_School_of_Witchcraft_and_Wizardry"
+      "name": "Georgia Institute Of Technology",
+      "link": "https://research.gatech.edu/robotics",
+      "location": "Atlanta, GA",
+      "level": "MS in Computational Perception and Robotics"
     }
   ]
 }
