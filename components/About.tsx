@@ -27,14 +27,13 @@ const About = (): JSX.Element => {
             advised by{" "}
             <ExtLink href={personalInfo.about.advisor.link}>
               {" "}
-              {personalInfo.about.advisor.name}.{" "}
+              {personalInfo.about.advisor.name}
             </ExtLink>
-            I am also working as a GRA with 
+            . I am also working as a Graduate Research Assistant with{" "}
             <ExtLink href={personalInfo.about.graadvisor.link}>
-              {" "}
-              {personalInfo.about.graadvisor.name}.{" "}
-            </ExtLink> 
-            <br />
+              {personalInfo.about.graadvisor.name}
+            </ExtLink>
+            . <br />
             <a className="text-sm">✉️ {personalInfo.about.email}</a>
           </p>
           <p className="text-sm text-gray-600">

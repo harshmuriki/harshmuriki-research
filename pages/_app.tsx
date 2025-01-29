@@ -6,6 +6,8 @@ import Layout from '../components/Layout';
 import personalInfo from '../components/data/personalInfo.json';
 import GoogleTag from '../components/GoogleTag';
 
+import { Analytics } from "@vercel/analytics/react";
+
 import 'tailwindcss/tailwind.css';
 
 const App = ({Component, pageProps}: Readonly<AppProps>): JSX.Element => {
@@ -29,6 +31,7 @@ const App = ({Component, pageProps}: Readonly<AppProps>): JSX.Element => {
 					<Component {...pageProps}/>
 				</main>
 			</Layout>
+			<Analytics />
 		</ThemeProvider>
 	);
 };

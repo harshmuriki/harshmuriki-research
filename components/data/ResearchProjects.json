@@ -1,10 +1,10 @@
 [
   {
     "title": "Semantic Segmentation",
-    "info": "Utilizing MIT Khronos repo to apply on the Hello-Robot Stretch embodiment"
+    "info": "Developing a 3D Spatio-Temporal mapping system using Hello-Robot Stretch to understand dynamic environments"
   },
   {
-    "title": "Deep learning in lettuce plants",
+    "title": "Deep learning with lettuce plants",
     "info": "Collected largest hyperspectral dataset of lettuce plants"
   }
 ]
