@@ -32,12 +32,12 @@
   {
     "id": 3,
     "author": "Abigail Cohen, Harsh Muriki, Yongsheng Chen",
-    "title": "Multimodal data fusion with hyperspectral and RGB data for nutrient prediction in hydroponic lettuce",
-    "conference": "",
+    "title": "V(HS)IT: Using Vision Transformers to Enhance Prospects for Rapid Lettuce Tissue Nutrient Detection and Precision Nutrient Control",
+    "conference": "Computers and Electronics in Agriculture 2025",
     "links": [
       {
         "name": "status",
-        "url": "In Progress"
+        "url": "Under Review"
       }
     ]
   }
