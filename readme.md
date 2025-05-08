@@ -1,72 +1,180 @@
-# NextJS Academic Theme
+# Personal Website
 
-## [Demo🔗](https://nextjs-academic-theme.vercel.app/)
-> A simple academic personal website, built with Tailwind CSS and Next.js, focused on performance, a11y and privacy 🚀
+A modern, responsive personal website built with Next.js and Tailwind CSS, featuring a clean design and smooth dark mode support.
 
+## Features
 
-## Highlights
+### Core Features
+- 🌓 Dark/Light mode support with system preference detection
+- 📱 Fully responsive design
+- 🎨 Modern UI with Tailwind CSS
+- ⚡ Fast performance with Next.js
+- 🔍 SEO optimized
+- 🖼️ Image optimization with Next.js Image component
 
-- Built with:
-    - [Next.js](https://nextjs.org/) (Thereby, hosting on [Vercel](https://vercel.com) is recommended. FREE)
-        - Written in [TypeScript](https://nextjs.org/docs/pages/building-your-application/configuring/typescript) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
-    - [Tailwind CSS](https://tailwindcss.com/)
-- **Easy customization** - edit the data in components/data/*.json without altering the code.
-- **Accessible** - follows [WAI-ARIA](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics).
-- **Responsive** - uses latest CSS features and looks great on all devices.
-- Optimized SEO
-- Traffic tracking by Google Analytics
+### Components
 
-## Development
+#### Navigation
+- Smooth scrolling navigation
+- Mobile-responsive menu
+- Dark mode toggle
+- Active section highlighting
 
-##### Install Node and NPM by NVM
-- For MacOS, `brew install NVM` or [install by script](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) (any OS)
-- Then `nvm install 20` installs Node.js v20; it comes with npm.
+#### Hero Section
+- Professional introduction
+- Social media links
+- Call-to-action buttons
+- Animated background
 
-##### Run locally
+#### About Section
+- Professional summary
+- Key skills and expertise
+- Personal interests
+- Downloadable resume
 
+#### Research Projects
+- Grid layout with project cards
+- Project images with hover effects
+- Project descriptions
+- External links to project details
+- "View All Projects" section
+- Dedicated research projects page
+
+#### Course Projects
+- Similar layout to research projects
+- Course-specific information
+- Project links and descriptions
+- Dedicated course projects page
+
+#### Publications
+- Clean, professional layout
+- Publication details with authors and conference information
+- Multiple link types (PDF, Video, External)
+- Status indicators
+- Hover effects and transitions
+
+#### Education
+- Academic history
+- Institution details
+- Degree information
+- Timeline layout
+
+#### Contact Section
+- Contact form
+- Social media links
+- Professional networks
+- Email contact
+
+## Technical Details
+
+### Built With
+- Next.js 13+ (App Router)
+- TypeScript
+- Tailwind CSS
+- Framer Motion (for animations)
+- React Icons
+
+### Project Structure
+```
+├── app/
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── data/
+│   │   ├── CourseProjects.json
+│   │   ├── Education.json
+│   │   ├── Publications.json
+│   │   └── ResearchProjects.json
+│   ├── CourseProjects.tsx
+│   ├── Education.tsx
+│   ├── ExtLink.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── Navbar.tsx
+│   ├── PublicationItem.tsx
+│   └── ResearchProjects.tsx
+├── pages/
+│   ├── course-projects.tsx
+│   └── research.tsx
+├── public/
+│   └── images/
+├── styles/
+│   └── globals.css
+└── tailwind.config.js
+```
+
+### Key Features Implementation
+
+#### Dark Mode
+- System preference detection
+- Manual toggle option
+- Persistent preference storage
+- Smooth transitions
+
+#### Responsive Design
+- Mobile-first approach
+- Breakpoint-specific layouts
+- Flexible grid systems
+- Optimized images
+
+#### Performance
+- Image optimization
+- Code splitting
+- Lazy loading
+- Minimal dependencies
+
+## Getting Started
+
+1. Clone the repository
 ```bash
-cd NextJSAcademicTheme/
-# Install dependencies
+git clone [repository-url]
+```
+
+2. Install dependencies
+```bash
 npm install
-# Run in development mode
-npm run dev
-# Build for production
-npm run build
-
+# or
+yarn install
 ```
 
-##### Customize your info
-- in components/data/personalInfo.json
-- in components/data/publications.json
-- in components/data/projects.json
-- in components/data/teaching.json
-- in .env
-- in public/cv.pdf
-
-
-##### Deploy on Vercel
-- Option 1: deploy on Vercel via [Vercel cli](https://vercel.com/docs/cli)
-
+3. Run the development server
 ```bash
-npm i -g vercel
-# preview
-vercel
-# production
-vercel --prod
+npm run dev
+# or
+yarn dev
 ```
 
-- Option 2: push to your own Github repo then [connect it to Vercel](https://vercel.com/docs/deployments/git#deploying-a-git-repository) (CI/CD, i.e. every new commit to Github will reflect on Vercel automatically.)
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+## Customization
 
-- After successful deployment on Vercel, it should be alive on `yourwebname.vercel.app` online. To use your own **domain name**, config the settings on Vercel [here](https://vercel.com/docs/projects/domains/add-a-domain#verify-domain-access). 
+### Adding New Projects
+1. Update the respective JSON file in `components/data/`
+2. Add project images to `public/images/`
+3. Update the component to display new projects
 
-##### [Optional] Track your web traffic by connecting to [Google Analytics](https://analytics.google.com/analytics/academy/course/6)
-- Simply add your project tracking code, e.g. G-38LNZ3XXXX, in `.env`.
+### Modifying Styles
+- Tailwind classes can be modified in the component files
+- Global styles can be updated in `styles/globals.css`
+- Theme configuration in `tailwind.config.js`
+
+### Adding New Sections
+1. Create a new component in the `components/` directory
+2. Add the component to `app/page.tsx`
+3. Update the navigation if needed
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
-- Inspired by [https://kepinski.ch/](https://github.com/xxczaki/site)
-
-### License
-
-Code released under [WTFPL](http://www.wtfpl.net/)
+- Inspired by [Kepinski](https://kepinski.ch/) and [Lynne](https://github.com/lydhr)
