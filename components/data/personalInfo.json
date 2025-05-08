@@ -6,7 +6,8 @@
   "socialMedia": {
     "Twitter": "https://x.com/Harshmuriki24",
     "LinkedIn": "https://www.linkedin.com/in/venkata-harsh-muriki/",
-    "GoogleScholar": "https://scholar.google.com/citations?user=Q9a5nPkAAAAJ&hl=en"
+    "GoogleScholar": "https://scholar.google.com/citations?user=Q9a5nPkAAAAJ&hl=en",
+    "GitHub": "https://github.com/harshmuriki"
   },
   "about": {
     "year": "1st-year",
@@ -27,7 +28,7 @@
       "link": "https://newcenter.ce.gatech.edu/"
     },
     "email": "vmuriki3@gatech.edu",
-    "interest": "Human-Robot Interaction, Robot Learning, Navigation and Manipulation in Unseen, Dynamic Environments, AgTech Robotics"
+    "interest": "Human-Robot Interaction, Robot Learning, Understanding Unseen and Dynamic Environments, AgTech Robotics"
   },
   "love": "https://harrypotter.fandom.com/wiki/James_and_Lily_Potter",
   "education": [

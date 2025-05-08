@@ -29,7 +29,7 @@ const Education = (): JSX.Element => {
   return (
     <section className="grid" id="education">
       <h2 className="text-xl font-bold mt-12 mb-4">Education</h2>
-      <div className="text-base text-gray-700">
+      <div className="text-base text-gray-700 dark:text-gray-400">
         🐸 &nbsp;is at &nbsp;
         {groupedEducation.map((edu, idx) => (
           <span key={idx}>

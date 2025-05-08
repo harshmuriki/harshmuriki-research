@@ -1,10 +1,26 @@
 [
   {
-    "title": "Semantic Segmentation",
-    "info": "Developing a 3D Spatio-Temporal mapping system using Hello-Robot Stretch to understand dynamic environments"
+    "title": "Semantic Proactive Assistance for Households",
+    "info": "3-D Spatio-Temporal mapping with Hello-Robot-Stretch to understand and track dynamic indoor environments.",
+    "link": "https://github.com/NhiNguyencmt8/StretchMapping",
+    "image": "/images/sg khronos noorb.gif"
   },
   {
-    "title": "Deep learning with lettuce plants",
-    "info": "Collected largest hyperspectral dataset of lettuce plants"
+    "title": "Deep-Learning-Driven Lettuce Analysis",
+    "info": "Collected the largest hyperspectral lettuce dataset and trained vision-transformer models to predict nutrient content and growth.",
+    "link": "",
+    "image": "/images/lettuce.png"
+  },
+  {
+    "title": "Robotic Phenotyping for Small Scale Urban Farms",
+    "info": "3D Point-cloud processing and pose-estimation pipelines for accurate plant monitoring and robotic pollination.",
+    "link": "https://github.com/harshmuriki/flowerPose",
+    "image": "/images/pose_estimation.png"
+  },
+  {
+    "title": "Mass Estimation and Monitoring from 3D Point Clouds",
+    "info": "A hybrid cable-driven robot for non-destructive 3D monitoring of hydroponic plants",
+    "link": "pdfs/icra2023.pdf",
+    "image": "/images/mass_estimation.gif"
   }
 ]

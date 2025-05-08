@@ -1,0 +1,26 @@
+[
+  {
+    "title": "IRL Project: HINTeract-Hint-Driven Hierarchical Learning for Robotic Furniture Assembly",
+    "info": "Built a modular HRL framework where a Sawyer arm requests on-demand human hints to grasp, align, and insert parts, achieving sample-efficient toy-table assembly in Robosuite with 260 expert demos and open-sourced code.",
+    "link": "https://github.com/harshmuriki/cs7648",
+    "image": "/images/grasp.gif"
+  },
+  {
+    "title": "MRS Project: CableCrop RL-Multi-Cable Robot Planning for Agricultural Data Capture",
+    "info": "Designed a coordinated RGB+hyperspectral cable-robot pair and trained PPO/MAPPO agents in simulation to maximize crop coverage and data richness while dodging collisions for scalable precision-ag monitoring.",
+    "link": "https://github.com/harshmuriki/cable-robot-system",
+    "image": "/images/Multi Robo Demo.gif"
+  },
+  {
+    "title": "HRI Project: LM-NavGrasp-Language-Guided Navigation & Grasping on Hello Robot Stretch",
+    "info": "Developed a pipeline that fuses large vision-language models (CLIP + SAM) with ROS-Nav so Stretch can parse a natural-language object description, autonomously navigate to the correct table, and execute a grasp on the specified item in cluttered lab scenes.",
+    "link": "https://github.com/harshmuriki/LM-NavGrasp",
+    "image": "/images/Grasping Diagram.png"
+  },
+  {
+    "title": "ML Project: Student dropout predictive ML model ",
+    "info": "Condensed a 4.4 k-student, 35-feature Portuguese dataset with PCA and trained logistic regression, random forest, and neural nets-best 89% accuracy-to highlight tuition status and 2nd-semester grades as key risk signals for targeted retention action.",
+    "link": "https://harshmuriki24.github.io/ML-4641/",
+    "image": "/images/ml_course.png"
+  }
+]

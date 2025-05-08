@@ -28,14 +28,17 @@ const SupportingBox = (): JSX.Element => {
                 <Box href="https://drive.google.com/file/d/1PK9FspnqW6PVuEgGS42NGQmZqTYkhdXN/view?usp=sharing" label="Resume">
                     <IconImage path='/images/cv-file-interface-symbol-svgrepo-com.svg' name="CV"/>
                 </Box>
-                <Box href={personalInfo.socialMedia.Twitter} label="Twitter">
-                    <IconImage path='/images/icons8-twitter.svg' name="Twitter"/>
+                <Box href={personalInfo.socialMedia.Twitter} label="X">
+                    <IconImage path='/images/x.svg' name="X"/>
                 </Box>
                 <Box href={personalInfo.socialMedia.LinkedIn} label="LinkedIn">
                     <IconImage path='/images/icons8-linkedin.svg' name="LinkedIn"/>
                 </Box>
                 <Box href={personalInfo.socialMedia.GoogleScholar} label="GoogleScholar">
                     <IconImage path='/images/icons8-google-scholar.svg' name="GoogleScholar"/>
+                </Box>
+                <Box href={personalInfo.socialMedia.GitHub} label="GitHub">
+                    <IconImage path='/images/github.svg' name="GitHub"/>
                 </Box>
             </div>
         </div>

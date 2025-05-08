@@ -1,7 +1,7 @@
 [
   {
     "id": 4,
-    "author": "Gerry Chen, Harsh Muriki",
+    "author": "G. Chen, H. Muriki, C. Pradalier, Y. Chen, and F. Dellaert",
     "title": "A hybrid cable-driven robot for non-destructive leafy plant monitoring and mass estimation using structure from motion",
     "conference": "2023 IEEE International Conference on Robotics and Automation (ICRA) in London, UK",
     "links": [
@@ -12,32 +12,49 @@
       {
         "name": "video",
         "url": "https://youtu.be/D3NuSUnuYfk"
+      },
+      {
+        "name": "poster",
+        "url": "/pdfs/icra2023_poster.pdf"
       }
     ]
   },
 
   {
     "id": 5,
-    "author": "Harsh Muriki, Hong Ray Teo, Ved Sengupta, and Ai-Ping Hu",
+    "author": "H. Muriki, R. Teo, V. Sengupta, and A. Hu",
     "title": "Robotic Phenotyping for Small-Scale Urban Farms",
     "conference": "2025 IEEE International Conference on Robotics and Automation (ICRA) in Atlanta, USA",
     "links": [
       {
-        "name": "status",
-        "url": "Accepted"
+        "name": "pdf",
+        "url": "/pdfs/Robotic_Phenotyping_for_Small_Scale_Urban_Farms.pdf"
       }
     ]
   },
 
   {
     "id": 3,
-    "author": "Abigail Cohen, Harsh Muriki, Yongsheng Chen",
+    "author": "A. Cohen, H. Muriki, Y. Sun, S. Narayanan, L. Gan, and Y. Chen",
     "title": "V(HS)IT: Using Vision Transformers to Enhance Prospects for Rapid Lettuce Tissue Nutrient Detection and Precision Nutrient Control",
     "conference": "Computers and Electronics in Agriculture 2025",
     "links": [
       {
         "name": "status",
         "url": "Under Review"
+      }
+    ]
+  },
+
+  {
+    "id": 6,
+    "author": "H. Muriki, N. Nguyen, R. Rustagi, M. Patel, K. Ramachandruni, and S. Chernova",
+    "title": "Integrating ORB-SLAM2 and Khronos for Real-Time Object-Aware Semantic Mapping with Mobile Manipulators",
+    "conference": "Hello-Robot Newsletter April 2025",
+    "links": [
+      {
+        "name": "link",
+        "url": "https://hello-robot.com/community-updates/2025/stretch-community-news-apr2025"
       }
     ]
   }

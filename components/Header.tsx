@@ -33,10 +33,10 @@ const Header = ({
           <NavLink title="About" href="/#about" />
           <NavLink title="Publications" href="/#publications" />
           <NavLink title="Projects" href="/#ResearchProjects" />
-          <NavLink
+          {/* <NavLink
             title="Portfolio"
             href="https://harshmuriki-website.vercel.app/"
-          />
+          /> */}
 
           <button
             type="button"

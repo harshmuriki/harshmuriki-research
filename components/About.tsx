@@ -15,7 +15,7 @@ const About = (): JSX.Element => {
           <h1 className="text-4xl font-bold pb-8 md:pb-0">
             {personalInfo.name}
           </h1>
-          <p>
+          <p className="text-gray-700 dark:text-gray-300">
             I am a {personalInfo.about.year} BS/MS student in{" "}
             <ExtLink href={personalInfo.about.department.link}>
               {personalInfo.about.department.name}{" "}
@@ -34,9 +34,11 @@ const About = (): JSX.Element => {
               {personalInfo.about.graadvisor.name}
             </ExtLink>
             . <br />
-            <a className="text-sm">✉️ {personalInfo.about.email}</a>
+            <a className="text-sm text-gray-600 dark:text-gray-400">
+              ✉️ {personalInfo.about.email}
+            </a>
           </p>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-700 dark:text-gray-300">
             Research Interest: {personalInfo.about.interest}
           </p>
           {/* <p className="text-sm text-gray-400">
