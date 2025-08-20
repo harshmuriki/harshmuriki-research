@@ -16,7 +16,7 @@ const About = (): JSX.Element => {
             {personalInfo.name}
           </h1>
           <p className="text-gray-700 dark:text-gray-300">
-            I am a {personalInfo.about.year} BS/MS student in{" "}
+            I am a BS/MS student in{" "}
             <ExtLink href={personalInfo.about.department.link}>
               {personalInfo.about.department.name}{" "}
             </ExtLink>
@@ -29,7 +29,7 @@ const About = (): JSX.Element => {
               {" "}
               {personalInfo.about.advisor.name}
             </ExtLink>
-            . I am also working as a Graduate Research Assistant with{" "}
+            . I am also working as a Graduate Teaching Assistant with{" "}
             <ExtLink href={personalInfo.about.graadvisor.link}>
               {personalInfo.about.graadvisor.name}
             </ExtLink>
