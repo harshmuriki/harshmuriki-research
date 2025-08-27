@@ -35,13 +35,13 @@
 
   {
     "id": 3,
-    "author": "A. Cohen, H. Muriki, Y. Sun, S. Narayanan, L. Gan, and Y. Chen",
-    "title": "V(HS)IT: Using Vision Transformers to Enhance Prospects for Rapid Lettuce Tissue Nutrient Detection and Precision Nutrient Control",
-    "conference": "Computers and Electronics in Agriculture 2025",
+    "author": "A. Cohen, H. Muriki, Z. Qin, Y. Sun, L. Gan, and Y. Chen",
+    "title": "LettX: A Proof-of-Concept Exploring Vision Transformers and Residual Networks for Non-Destructive Lettuce Nutrient Assessment on Raw Hyperspectral Imagery",
+    "conference": "Smart Agricultural Technology 2025 (Under Review)",
     "links": [
       {
-        "name": "status",
-        "url": "Under Review"
+        "name": "link",
+        "url": "https://coe.gatech.edu/magazine/2024/fall/planting-seeds-farm-future"
       }
     ]
   },

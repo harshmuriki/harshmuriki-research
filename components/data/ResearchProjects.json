@@ -8,7 +8,7 @@
   {
     "title": "Deep-Learning-Driven Lettuce Analysis",
     "info": "Collected the largest hyperspectral lettuce dataset and trained vision-transformer models to predict nutrient content and growth.",
-    "link": "",
+    "link": "https://github.com/NEWCenterforAgTech/LettX",
     "image": "/images/lettuce.png"
   },
   {
