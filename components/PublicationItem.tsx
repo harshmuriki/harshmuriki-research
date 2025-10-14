@@ -26,7 +26,8 @@ const PublicationItem = ({ publication, index }: Props): JSX.Element => {
         {publication.links && publication.links.length > 0 && (
           <div className="flex flex-col items-end gap-2 min-w-[120px]">
             {publication.links.map((linkItem: any, idx: any) =>
-              linkItem.name === "status" ? (
+              typeof linkItem.name === "string" &&
+              linkItem.name.toLowerCase() === "status" ? (
                 <span
                   key={idx}
                   className="text-sm text-gray-600 dark:text-gray-400"

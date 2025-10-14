@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/private/", "/admin/"],
     },
-    sitemap: "https://harshmuriki.com/sitemap.xml",
+    sitemap: "https://harshmuriki.vercel.appsitemap.xml",
   };
 }

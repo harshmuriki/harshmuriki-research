@@ -1,60 +1,98 @@
 [
   {
-    "id": 4,
-    "author": "G. Chen, H. Muriki, C. Pradalier, Y. Chen, and F. Dellaert",
-    "title": "A hybrid cable-driven robot for non-destructive leafy plant monitoring and mass estimation using structure from motion",
-    "conference": "2023 IEEE International Conference on Robotics and Automation (ICRA) in London, UK",
+    "id": 1,
+    "author": "H. Muriki, A. Asfour, R. George, J. Knapp-Wilson, D. Chavez, and A. Hu",
+    "title": "Point Cloud-Based Deep Learning for Automated Dormant Pruning of Peach Trees",
+    "conference": "2026 IEEE International Conference on Robotics and Automation (ICRA) in Vienna, Austria",
     "links": [
       {
-        "name": "pdf",
-        "url": "https://arxiv.org/pdf/2209.08690"
-      },
-      {
-        "name": "video",
-        "url": "https://youtu.be/D3NuSUnuYfk"
-      },
-      {
-        "name": "poster",
-        "url": "/pdfs/icra2023_poster.pdf"
+        "name": "Status",
+        "url": "Under Review"
       }
     ]
   },
-
   {
-    "id": 5,
+    "id": 2,
+    "author": "A. Cohen, Y. Sun, Z. Qin, H. S. Muriki, Z. Xiao, Y. Lee, M. Housley, A. F. Sharkey, R. S. Ferrarezi, J. Li, L. Gan, Y. Chen",
+    "title": "Modular, On-Site Solutions with Lightweight Anomaly Detection for Sustainable Nutrient Management in Agriculture",
+    "conference": "ACS ES&T Engineering 2025 (Under Review)",
+    "links": [
+      {
+        "name": "PDF",
+        "url": "https://arxiv.org/pdf/2509.12247"
+      },
+      {
+        "name": "Status",
+        "url": "Under Review"
+      }
+
+    ]
+  },
+  {
+    "id": 3,
     "author": "H. Muriki, R. Teo, V. Sengupta, and A. Hu",
     "title": "Robotic Phenotyping for Small-Scale Urban Farms",
     "conference": "2025 IEEE International Conference on Robotics and Automation (ICRA) in Atlanta, USA",
     "links": [
       {
-        "name": "pdf",
+        "name": "PDF",
         "url": "/pdfs/Robotic_Phenotyping_for_Small_Scale_Urban_Farms.pdf"
+      },
+      {
+        "name": "Github",
+        "url": "https://github.com/harshmuriki/flowerPose"
       }
     ]
   },
-
   {
     "id": 3,
     "author": "A. Cohen, H. Muriki, Z. Qin, Y. Sun, L. Gan, and Y. Chen",
-    "title": "LettX: A Proof-of-Concept Exploring Vision Transformers and Residual Networks for Non-Destructive Lettuce Nutrient Assessment on Raw Hyperspectral Imagery",
-    "conference": "Smart Agricultural Technology 2025 (Under Review)",
+    "title": "A Proof-of-Concept for Non-Destructive Lettuce Nutrient Assessment Using Vision Transformers and Residual Networks on Raw Hyperspectral Imagery",
+    "conference": "Smart Agricultural Technology 2025",
     "links": [
       {
-        "name": "link",
+        "name": "Link",
         "url": "https://coe.gatech.edu/magazine/2024/fall/planting-seeds-farm-future"
+      },
+      {
+        "name": "PDF",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2772375525007324"
       }
     ]
   },
-
   {
-    "id": 6,
+    "id": 4,
     "author": "H. Muriki, N. Nguyen, R. Rustagi, M. Patel, K. Ramachandruni, and S. Chernova",
     "title": "Integrating ORB-SLAM2 and Khronos for Real-Time Object-Aware Semantic Mapping with Mobile Manipulators",
     "conference": "Hello-Robot Newsletter April 2025",
     "links": [
       {
-        "name": "link",
+        "name": "Link",
         "url": "https://hello-robot.com/community-updates/2025/stretch-community-news-apr2025"
+      },
+      {
+        "name":"Github",
+        "url": "https://github.com/NhiNguyencmt8/StretchMapping"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "author": "G. Chen, H. Muriki, C. Pradalier, Y. Chen, and F. Dellaert",
+    "title": "A hybrid cable-driven robot for non-destructive leafy plant monitoring and mass estimation using structure from motion",
+    "conference": "2023 IEEE International Conference on Robotics and Automation (ICRA) in London, UK",
+    "links": [
+      {
+        "name": "PDF",
+        "url": "https://arxiv.org/pdf/2209.08690"
+      },
+      {
+        "name": "Video",
+        "url": "https://youtu.be/D3NuSUnuYfk"
+      },
+      {
+        "name": "Poster",
+        "url": "/pdfs/icra2023_poster.pdf"
       }
     ]
   }

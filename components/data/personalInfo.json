@@ -1,8 +1,8 @@
 {
   "title": "Harsh Muriki",
   "name": "Harsh Muriki",
-  "domain": "https://harshmuriki.com/",
-  "copyright": "harshmuriki.com",
+  "domain": "https://harshmuriki.vercel.app",
+  "copyright": "harshmuriki.vercel.app",
   "socialMedia": {
     "Twitter": "https://x.com/Harshmuriki24",
     "LinkedIn": "https://www.linkedin.com/in/venkata-harsh-muriki/",
@@ -26,6 +26,12 @@
     "graadvisor": {
       "name": "Dr. Frank Dellaert",
       "link": "https://borglab.github.io/"
+    },
+    "prevgraadvisor": {
+      "name": "Dr. Yongsheng Chen",
+      "link": "https://newcenter.ce.gatech.edu/",
+      "position": "GRA",
+      "area": "Deep Learning and Computer Vision in AgTech"
     },
     "email": "vmuriki3@gatech.edu",
     "interest": "Human-Robot Interaction, Robot Learning, Understanding Unseen and Dynamic Environments, AgTech Robotics"
