@@ -35,7 +35,7 @@ const Header = ({
           <NavLink title="Projects" href="/#ResearchProjects" />
           {/* <NavLink
             title="Portfolio"
-            href="https://harshmuriki-website.vercel.app/"
+            href="https://harshmuriki.com/"
           /> */}
 
           <button
