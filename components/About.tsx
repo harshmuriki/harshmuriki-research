@@ -29,16 +29,18 @@ const About = (): JSX.Element => {
               {" "}
               {personalInfo.about.advisor.name}
             </ExtLink>
-            . I am also working as a GTA for CS 3630 with{" "}
+            {" "}, where I focus on Task and Motion Planning (TAMP) using VLMs.
+            I am also working as a Graduate Teaching Assistant for CS 3630
+             {/* with{" "}
             <ExtLink href={personalInfo.about.graadvisor.link}>
               {personalInfo.about.graadvisor.name}
-            </ExtLink>
+            </ExtLink> */}
             .
-            I previously worked with{" "}
+            Previously, I worked as a {personalInfo.about.prevgraadvisor.position} with{" "}
             <ExtLink href={personalInfo.about.prevgraadvisor.link}> 
               {personalInfo.about.prevgraadvisor.name}{" "}
             </ExtLink>
-            as a {personalInfo.about.prevgraadvisor.position} in {personalInfo.about.prevgraadvisor.area}
+            on {personalInfo.about.prevgraadvisor.area}
             . <br />
             <a className="text-sm text-gray-600 dark:text-gray-400">
               ✉️ {personalInfo.about.email}
