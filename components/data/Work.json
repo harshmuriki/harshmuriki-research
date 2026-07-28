@@ -1,0 +1,29 @@
+[
+    {
+      "company": "Amazon Personal Robotics Group (Amazon Lab 126)",
+      "role": "Research Scientist Intern (Robotics)",
+      "work": "Working on long-horizon high-level planning using VLMs",
+      "dates": ["May 2026", "Aug 2026"],
+      "advisors": "Jin Jho and ...",
+      "location": "Sunnyvale, CA",
+      "image": "/images/amz.png"
+    },
+    {
+        "company": "Georgia Tech Research Insttute (GTRI)",
+        "role": "Machine Learning Intern",
+        "work": "Trained 3D deep learning models to learn peachtree purning.",
+        "dates": ["May 2025", "Aug 2025"],
+        "advisors": "Dr. Ai-Ping Hu",
+        "location": "Atlanta, GA",
+        "image": "/images/gtri.png"
+    },
+    {
+        "company": "Georgia Tech Research Insttute (GTRI)",
+        "role": "Robotics Intern",
+        "work": "Built online perception algorithms to extract pose of flowers in unstructured domains",
+        "dates": ["May 2024", "Aug 2024"],
+        "advisors": "Dr. Ai-Ping Hu",
+        "location": "Atlanta, GA",
+        "image": "/images/gtri.png"
+    }
+]

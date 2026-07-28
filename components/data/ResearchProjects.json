@@ -1,5 +1,11 @@
 [
   {
+    "title": "Task and Motion Planning (TAMP) for Households",
+    "info": "Working on replanning strategies in TAMP + households domains using VLAs and VLMs for high-level planning.",
+    "link": "https://github.com/harshmuriki",
+    "image": "/images/tamp.png"
+  },
+  {
     "title": "Semantic Proactive Assistance for Households",
     "info": "3-D Spatio-Temporal mapping with Hello-Robot-Stretch to understand and track dynamic indoor environments.",
     "link": "https://github.com/NhiNguyencmt8/StretchMapping",

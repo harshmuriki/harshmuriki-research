@@ -16,7 +16,7 @@ const About = (): JSX.Element => {
             {personalInfo.name}
           </h1>
           <p className="text-gray-700 dark:text-gray-300">
-            I am a BS/MS student in{" "}
+            I am a PhD student in{" "}
             <ExtLink href={personalInfo.about.department.link}>
               {personalInfo.about.department.name}{" "}
             </ExtLink>
@@ -29,19 +29,9 @@ const About = (): JSX.Element => {
               {" "}
               {personalInfo.about.advisor.name}
             </ExtLink>
-            {" "}, where I focus on Task and Motion Planning (TAMP) using VLMs.
-            I am also working as a Graduate Teaching Assistant for CS 3630
-             {/* with{" "}
-            <ExtLink href={personalInfo.about.graadvisor.link}>
-              {personalInfo.about.graadvisor.name}
-            </ExtLink> */}
-            .
-            Previously, I worked as a {personalInfo.about.prevgraadvisor.position} with{" "}
-            <ExtLink href={personalInfo.about.prevgraadvisor.link}> 
-              {personalInfo.about.prevgraadvisor.name}{" "}
-            </ExtLink>
-            on {personalInfo.about.prevgraadvisor.area}
-            . <br />
+            , where I focus on Task and Motion Planning (TAMP) using VLMs.
+             Currently interning at Amazon Lab 126 (Fauna Robotics) in San Jose, CA.
+            <br />
             <a className="text-sm text-gray-600 dark:text-gray-400">
               ✉️ {personalInfo.about.email}
             </a>
