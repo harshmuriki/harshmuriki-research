@@ -1,0 +1,53 @@
+:root {
+  --theme-spread-duration: 1.2s;
+  --theme-spread-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Feathered edge: opaque core, then a long fade to transparent. */
+  --theme-spread-mask: radial-gradient(
+    circle farthest-side at center,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 0.86) 58%,
+    rgba(0, 0, 0, 0.5) 76%,
+    rgba(0, 0, 0, 0.18) 89%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+::view-transition-group(root) {
+  animation-duration: var(--theme-spread-duration);
+  animation-timing-function: var(--theme-spread-ease);
+}
+
+::view-transition-new(root),
+.dark::view-transition-new(root) {
+  mask-image: var(--theme-spread-mask);
+  -webkit-mask-image: var(--theme-spread-mask);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-size: 0 0;
+  -webkit-mask-size: 0 0;
+  animation: theme-spread var(--theme-spread-duration)
+    var(--theme-spread-ease) both;
+}
+
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+  animation: none;
+  z-index: -1;
+}
+
+@keyframes theme-spread {
+  to {
+    mask-size: 320vmax 320vmax;
+    -webkit-mask-size: 320vmax 320vmax;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

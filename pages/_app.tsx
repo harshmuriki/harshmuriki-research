@@ -9,12 +9,13 @@ import GoogleTag from '../components/GoogleTag';
 import { Analytics } from "@vercel/analytics/react";
 
 import 'tailwindcss/tailwind.css';
+import '../styles/theme-transition.css';
 
 const App = ({Component, pageProps}: Readonly<AppProps>): JSX.Element => {
 	const {resolvedTheme} = useTheme();
 
 	return (
-		<ThemeProvider attribute="class">
+		<ThemeProvider attribute="class" disableTransitionOnChange>
 			<GoogleTag/>
 			<Head>
 				<title>{personalInfo.title}</title>
