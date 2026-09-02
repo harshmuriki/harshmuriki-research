@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import NavLink from "./NavLink";
 import { Sun, Moon } from "react-feather";
+import { toggleThemeWithCenterSpread } from "../utils/themeTransition";
 
 interface HeaderProps {
   mounted: any;
@@ -32,6 +33,7 @@ const Header = ({
         <nav className="flex items-center justify-between pr-4">
           <NavLink title="About" href="/#about" />
           <NavLink title="Publications" href="/#publications" />
+          <NavLink title="Teaching" href="/#teaching" />
           <NavLink title="Projects" href="/#ResearchProjects" />
           {/* <NavLink
             title="Portfolio"
@@ -44,7 +46,7 @@ const Header = ({
             className="cursor-pointer hover:bg-gray-300 p-1 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:border-blue-30 rounded-md"
             disabled={!mounted}
             onClick={() => {
-              setTheme(resolvedTheme === "light" ? "dark" : "light");
+              toggleThemeWithCenterSpread(resolvedTheme, setTheme);
             }}
           >
             <abbr title="Switch theme">

@@ -1,11 +1,9 @@
 [
-    {
-        "id": "MG101",
-        "name": "Introduction to magic"
-    },
-    {
-        "id": "MG102",
-        "name": "Defense against the dark arts spells"
-    }
-
+  {
+    "id": "CS 3630",
+    "name": "Introduction to Perception and Robotics",
+    "role": "Teaching Assistant",
+    "link": "https://catalog.gatech.edu/search/?P=CS+3630",
+    "semesters": ["Fall 2025", "Spring 2026"]
+  }
 ]
