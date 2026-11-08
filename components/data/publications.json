@@ -25,6 +25,22 @@
   },
   {
     "id": 2,
+    "author": "A. Cohen, Y. Sun, Z. Qin, H. S. Muriki, Z. Xiao, Y. Lee, M. Housley, A. F. Sharkey, R. S. Ferrarezi, J. Li, L. Gan, Y. Chen",
+    "title": "Modular, On-Site Solutions with Lightweight Anomaly Detection for Sustainable Nutrient Management in Agriculture",
+    "conference": "ACS ES&T Engineering, vol. 6, no. 3, pp. 1089–1105, 2026",
+    "links": [
+      {
+        "name": "Paper",
+        "url": "https://doi.org/10.1021/acsestengg.5c00635"
+      },
+      {
+        "name": "PDF",
+        "url": "https://arxiv.org/pdf/2509.12247"
+      }
+    ]
+  },
+  {
+    "id": 3,
     "author": "M. Patel, K. Ramachandruni, H. Muriki, N. Nguyen, A. Balasubramanian, and S. Chernova",
     "title": "Exploring User Perceptions of Proactive Robot Assistance In-The-Wild",
     "conference": "2027 IEEE International Conference on Robotics and Automation (ICRA) (Under Review)",
@@ -36,7 +52,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "author": "H. Muriki, A. Asfour, R. George, J. Knapp-Wilson, D. Chavez, and A. Hu",
     "title": "Point Cloud-Based Deep Learning for Automated Dormant Pruning of Peach Trees",
     "conference": "2027 IEEE International Conference on Robotics and Automation (ICRA) (Under Review)",
@@ -48,30 +64,18 @@
     ]
   },
   {
-    "id": 4,
-    "author": "A. Cohen, Y. Sun, Z. Qin, H. S. Muriki, Z. Xiao, Y. Lee, M. Housley, A. F. Sharkey, R. S. Ferrarezi, J. Li, L. Gan, Y. Chen",
-    "title": "Modular, On-Site Solutions with Lightweight Anomaly Detection for Sustainable Nutrient Management in Agriculture",
-    "conference": "ACS ES&T Engineering 2025 (Under Review)",
-    "links": [
-      {
-        "name": "PDF",
-        "url": "https://arxiv.org/pdf/2509.12247"
-      },
-      {
-        "name": "Status",
-        "url": "Under Review"
-      }
-    ]
-  },
-  {
     "id": 5,
-    "author": "H. Muriki, R. Teo, V. Sengupta, and A. Hu",
-    "title": "Robotic Phenotyping for Small-Scale Urban Farms",
-    "conference": "2025 IEEE International Conference on Robotics and Automation (ICRA) in Atlanta, USA",
+    "author": "H. Muriki, H. R. Teo, V. Sengupta, and A.-P. Hu",
+    "title": "Robotic 3D Flower Pose Estimation for Small-Scale Urban Farms",
+    "conference": "2025 IEEE International Conference on Robotics and Automation (ICRA) in Atlanta, USA, pp. 15539–15545",
     "links": [
       {
         "name": "PDF",
         "url": "/pdfs/Robotic_Phenotyping_for_Small_Scale_Urban_Farms.pdf"
+      },
+      {
+        "name": "IEEE",
+        "url": "https://doi.org/10.1109/ICRA55743.2025.11128713"
       },
       {
         "name": "Github",
@@ -101,9 +105,9 @@
   },
   {
     "id": 7,
-    "author": "A. Cohen, H. Muriki, Y. Sun, S. Narayanan, L. Gan, and Y. Chen",
+    "author": "A. Cohen, H. Muriki, Y. Sun, Z. Qin, L. Gan, and Y. Chen",
     "title": "A Proof-of-Concept for Non-Destructive Lettuce Nutrient Assessment Using Vision Transformers and Residual Networks on Raw Hyperspectral Imagery",
-    "conference": "Smart Agricultural Technology 2025",
+    "conference": "Smart Agricultural Technology, vol. 12, art. 101501, 2025",
     "links": [
       {
         "name": "Link",
@@ -135,11 +139,15 @@
     "id": 9,
     "author": "G. Chen, H. Muriki, C. Pradalier, Y. Chen, and F. Dellaert",
     "title": "A hybrid cable-driven robot for non-destructive leafy plant monitoring and mass estimation using structure from motion",
-    "conference": "2023 IEEE International Conference on Robotics and Automation (ICRA) in London, UK",
+    "conference": "2023 IEEE International Conference on Robotics and Automation (ICRA) in London, UK, pp. 11809–11816",
     "links": [
       {
         "name": "PDF",
         "url": "https://arxiv.org/pdf/2209.08690"
+      },
+      {
+        "name": "IEEE",
+        "url": "https://doi.org/10.1109/ICRA48891.2023.10161045"
       },
       {
         "name": "Video",
