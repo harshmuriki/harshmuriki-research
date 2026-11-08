@@ -1,15 +1,19 @@
 [
   {
+    "title": "Test-Time Memory Retrieval for VLAs",
+    "info": "With zero demonstrations of a new task, the robot retrieves contact-and-motion sub-trajectories from past experience on other objects and uses them in context to act. Benchmarked against STRAP, appearance-based, and random retrieval in RoboCasa365 and LIBERO.",
+    "link": ""
+  },
+  {
     "title": "Evaluating Long-Horizon Robot Planning under Uncertainty",
     "info": "LEAP Workshop @ CoRL 2026. A benchmark of seven long-horizon household tasks in Habitat that vary the robot's initial memory and the environment, evaluating ReAct, VLM-TAMP, and Tru-POMDP across 1,350 episodes.",
     "link": "https://harshmuriki.github.io/leap-planning-uncertainty/",
     "image": "/images/leap_planning.gif"
   },
   {
-    "title": "Task and Motion Planning (TAMP) for Households",
-    "info": "Working on replanning strategies in TAMP + households domains using VLAs and VLMs for high-level planning.",
-    "link": "https://github.com/harshmuriki",
-    "image": "/images/tamp.png"
+    "title": "Explainable Long-Horizon TAMP in Unseen Environments",
+    "info": "An explainable task and motion planning framework for long-horizon mobile manipulation that combines belief-space planning with interpretable decision traces, integrating symbolic task structure with uncertainty-aware planning in Habitat.",
+    "link": ""
   },
   {
     "title": "Semantic Proactive Assistance for Households",

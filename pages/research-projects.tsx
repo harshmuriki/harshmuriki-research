@@ -10,18 +10,20 @@ const ResearchProjects = (): JSX.Element => {
         {data.map((project) => (
           <div key={project.title} className="p-4 rounded-md hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors duration-200">
             <div className="flex gap-6 items-start">
-              <div className="w-48 h-32 relative flex-shrink-0">
-                <Image
-                  src={
-                    project.image === "image"
-                      ? "/images/project-placeholder.jpg"
-                      : project.image
-                  }
-                  alt={project.title}
-                  fill
-                  className="object-cover rounded-md"
-                />
-              </div>
+              {project.image && (
+                <div className="w-48 h-32 relative flex-shrink-0">
+                  <Image
+                    src={
+                      project.image === "image"
+                        ? "/images/project-placeholder.jpg"
+                        : project.image
+                    }
+                    alt={project.title}
+                    fill
+                    className="object-cover rounded-md"
+                  />
+                </div>
+              )}
               <div className="flex-1">
                 <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">
                   {project.title}

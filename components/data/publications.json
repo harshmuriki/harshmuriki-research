@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": 1,
     "author": "H. Muriki, G. Aravindan, Y. Zheng, and S. Chernova",
     "title": "Evaluating Long-Horizon Robot Planning under Uncertainty",
     "conference": "4th Workshop on Learning Effective Abstractions for Planning (LEAP), CoRL 2026 in Austin, USA",
@@ -24,10 +24,10 @@
     ]
   },
   {
-    "id": 1,
-    "author": "H. Muriki, A. Asfour, R. George, J. Knapp-Wilson, D. Chavez, and A. Hu",
-    "title": "Point Cloud-Based Deep Learning for Automated Dormant Pruning of Peach Trees",
-    "conference": "2026 IEEE International Conference on Robotics and Automation (ICRA) in Vienna, Austria",
+    "id": 2,
+    "author": "M. Patel, K. Ramachandruni, H. Muriki, N. Nguyen, A. Balasubramanian, and S. Chernova",
+    "title": "Exploring User Perceptions of Proactive Robot Assistance In-The-Wild",
+    "conference": "2027 IEEE International Conference on Robotics and Automation (ICRA) (Under Review)",
     "links": [
       {
         "name": "Status",
@@ -36,7 +36,19 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
+    "author": "H. Muriki, A. Asfour, R. George, J. Knapp-Wilson, D. Chavez, and A. Hu",
+    "title": "Point Cloud-Based Deep Learning for Automated Dormant Pruning of Peach Trees",
+    "conference": "2027 IEEE International Conference on Robotics and Automation (ICRA) (Under Review)",
+    "links": [
+      {
+        "name": "Status",
+        "url": "Under Review"
+      }
+    ]
+  },
+  {
+    "id": 4,
     "author": "A. Cohen, Y. Sun, Z. Qin, H. S. Muriki, Z. Xiao, Y. Lee, M. Housley, A. F. Sharkey, R. S. Ferrarezi, J. Li, L. Gan, Y. Chen",
     "title": "Modular, On-Site Solutions with Lightweight Anomaly Detection for Sustainable Nutrient Management in Agriculture",
     "conference": "ACS ES&T Engineering 2025 (Under Review)",
@@ -52,7 +64,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 5,
     "author": "H. Muriki, R. Teo, V. Sengupta, and A. Hu",
     "title": "Robotic Phenotyping for Small-Scale Urban Farms",
     "conference": "2025 IEEE International Conference on Robotics and Automation (ICRA) in Atlanta, USA",
@@ -72,8 +84,24 @@
     ]
   },
   {
-    "id": 3,
-    "author": "A. Cohen, H. Muriki, Z. Qin, Y. Sun, L. Gan, and Y. Chen",
+    "id": 6,
+    "author": "G. Chen, S. K. Narayanan, T. G. Ottou, B. Missaoui, H. Muriki, C. Pradalier, and Y. Chen",
+    "title": "Hyperspectral Neural Radiance Fields",
+    "conference": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025, Spotlight",
+    "links": [
+      {
+        "name": "PDF",
+        "url": "https://arxiv.org/pdf/2403.14839"
+      },
+      {
+        "name": "Link",
+        "url": "https://arxiv.org/abs/2403.14839"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "author": "A. Cohen, H. Muriki, Y. Sun, S. Narayanan, L. Gan, and Y. Chen",
     "title": "A Proof-of-Concept for Non-Destructive Lettuce Nutrient Assessment Using Vision Transformers and Residual Networks on Raw Hyperspectral Imagery",
     "conference": "Smart Agricultural Technology 2025",
     "links": [
@@ -88,7 +116,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 8,
     "author": "H. Muriki, N. Nguyen, R. Rustagi, M. Patel, K. Ramachandruni, and S. Chernova",
     "title": "Integrating ORB-SLAM2 and Khronos for Real-Time Object-Aware Semantic Mapping with Mobile Manipulators",
     "conference": "Hello-Robot Newsletter April 2025",
@@ -104,7 +132,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 9,
     "author": "G. Chen, H. Muriki, C. Pradalier, Y. Chen, and F. Dellaert",
     "title": "A hybrid cable-driven robot for non-destructive leafy plant monitoring and mass estimation using structure from motion",
     "conference": "2023 IEEE International Conference on Robotics and Automation (ICRA) in London, UK",

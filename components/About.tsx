@@ -28,9 +28,13 @@ const About = (): JSX.Element => {
             <ExtLink href={personalInfo.about.advisor.link}>
               {" "}
               {personalInfo.about.advisor.name}
+            </ExtLink>{" "}
+            and{" "}
+            <ExtLink href={personalInfo.about.coadvisor.link}>
+              {personalInfo.about.coadvisor.name}
             </ExtLink>
-            , where I focus on Task and Motion Planning (TAMP) using VLMs.
-             Currently interning at Amazon Lab 126 (Fauna Robotics) in San Jose, CA.
+            , where I work on memory, retrieval, and planning for VLMs and VLAs.
+            Previously an Applied Scientist Intern at Amazon Lab126 (Fauna Robotics), building multi-modal memory for VLM planners.
             <br />
             <a className="text-sm text-gray-600 dark:text-gray-400">
               ✉️ {personalInfo.about.email}

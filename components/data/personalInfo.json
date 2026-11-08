@@ -10,7 +10,7 @@
     "GitHub": "https://github.com/harshmuriki"
   },
   "about": {
-    "year": "1st-year",
+    "year": "2nd-year",
     "department": {
       "name": "Robotics",
       "link": "https://research.gatech.edu/robotics"
@@ -34,21 +34,25 @@
       "area": "deep learning and computer vision in AgTech"
     },
     "email": "vmuriki3@gatech.edu",
-    "interest": "Task and Motion Planning (TAMP), Long-Horizon Mobile Manipulation, Large Vision-Language Models for Robotics, Embodied AI, Learning-Based Robotic Planning, Agricultural Robotics"
+    "interest": "Memory & Retrieval for Robot Policies, Vision-Language-Action Models (VLAs) & VLMs, Task and Motion Planning (TAMP), Long-Horizon Mobile Manipulation, Imitation & Reinforcement Learning, 3D Perception",
+    "coadvisor": {
+      "name": "Dr. Sidd Karamcheti",
+      "link": "https://www.siddkaramcheti.com/"
+    }
   },
   "love": "https://harrypotter.fandom.com/wiki/James_and_Lily_Potter",
   "education": [
     {
       "name": "Georgia Institute Of Technology",
-      "link": "https://www.gatech.edu",
+      "link": "https://research.gatech.edu/robotics",
       "location": "Atlanta, GA",
-      "level": "BS in Computer Science"
+      "level": "PhD in Robotics"
     },
     {
       "name": "Georgia Institute Of Technology",
-      "link": "https://research.gatech.edu/robotics",
+      "link": "https://www.gatech.edu",
       "location": "Atlanta, GA",
-      "level": "MS in Computational Perception and Robotics"
+      "level": "BS/MS in Computer Science"
     }
   ]
 }

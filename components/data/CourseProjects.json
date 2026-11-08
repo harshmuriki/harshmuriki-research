@@ -2,7 +2,7 @@
   {
     "title": "IRL Project: HINTeract-Hint-Driven Hierarchical Learning for Robotic Furniture Assembly",
     "info": "Built a modular HRL framework where a Sawyer arm requests on-demand human hints to grasp, align, and insert parts, achieving sample-efficient toy-table assembly in Robosuite with 260 expert demos and open-sourced code.",
-    "link": "https://github.com/harshmuriki/cs7648",
+    "link": "https://github.com/harshmuriki/HINTeract",
     "image": "/images/grasp.gif"
   },
   {
