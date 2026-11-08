@@ -8,7 +8,7 @@ const ResearchProjects = (): JSX.Element => {
       <h1 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Research Projects</h1>
       <div className="space-y-8">
         {data.map((project) => (
-          <div key={project.title} className="p-4 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">
+          <div key={project.title} className="p-4 rounded-md hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors duration-200">
             <div className="flex gap-6 items-start">
               <div className="w-48 h-32 relative flex-shrink-0">
                 <Image

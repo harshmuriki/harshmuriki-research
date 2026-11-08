@@ -17,7 +17,7 @@ const NavLink = ({ title, href }: Props): JSX.Element => {
         type="button"
         className={`rounded-lg no-underline flex h-8 mr-0 pr-5 pl-5 
 					items-center border-none cursor-pointer font-bold text-sm 
-                    ${pathname === href ? "bg-black dark:bg-white text-white dark:text-black" : "bg-auto"}`}
+                    ${pathname === href ? "bg-ink dark:bg-bone text-paper dark:text-charcoal" : "bg-auto"}`}
       >
         {title}
       </button>

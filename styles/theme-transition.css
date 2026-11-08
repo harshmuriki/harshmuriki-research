@@ -51,3 +51,7 @@
     animation: none !important;
   }
 }
+
+/* Matte page colour behind overscroll, matching the body (see tailwind paper/charcoal) */
+html { background: #F5F2EC; }
+html.dark { background: #1C1B19; }

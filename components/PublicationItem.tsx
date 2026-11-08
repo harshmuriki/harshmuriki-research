@@ -7,7 +7,7 @@ interface Props {
 
 const PublicationItem = ({ publication, index }: Props): JSX.Element => {
   return (
-    <div className="mt-6 mb-8 p-4 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">
+    <div className="mt-6 mb-8 p-4 rounded-md hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors duration-200">
       <div className="flex justify-between items-start gap-6">
         {/* Left side - Publication details */}
         <div className="flex-1 space-y-2">

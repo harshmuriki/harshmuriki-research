@@ -13,7 +13,7 @@ const ResearchProjects = (): JSX.Element => {
         {displayedProjects.map((project) => (
           <div
             key={project.title}
-            className="p-4 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200"
+            className="p-4 rounded-md hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors duration-200"
           >
             <div className="flex gap-6 items-start">
               <div className="w-48 h-32 relative flex-shrink-0">

@@ -21,7 +21,7 @@ const Publications = (): JSX.Element => {
             return (
               <div
                 key={publication.title}
-                className="p-4 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200"
+                className="p-4 rounded-md hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors duration-200"
               >
                 <div className="flex justify-between items-start gap-6">
                   <div className="flex-1 space-y-2">
