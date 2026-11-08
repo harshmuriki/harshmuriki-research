@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
 					<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png"/>
 					<link rel="manifest" href="/site.webmanifest"/>
 				</Head>
-				<body className="items-center justify-center bg-paper dark:bg-charcoal text-ink dark:text-bone font-sans text-lg">
+				<body className="items-center justify-center bg-paper dark:bg-charcoal text-ink dark:text-bone text-lg">
 					<Main/>
 					<NextScript/>
 				</body>

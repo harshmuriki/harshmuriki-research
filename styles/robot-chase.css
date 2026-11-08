@@ -1,0 +1,219 @@
+/* Robot chase easter egg (components/RobotChase.tsx). */
+
+.rc-stage {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 88px;
+	z-index: 5; /* above content, below the sticky header (z-10) */
+	pointer-events: none; /* never block clicks on the page... */
+	overflow: hidden;
+	/* Fade the page content out under the strip so the robots read cleanly. */
+	background: linear-gradient(to top, #F5F2EC 45%, rgba(245, 242, 236, 0));
+}
+
+.dark .rc-stage {
+	background: linear-gradient(to top, #1C1B19 45%, rgba(28, 27, 25, 0));
+}
+
+.rc-ground {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 8px;
+	border-top: 1px dashed currentColor;
+	opacity: 0.2;
+}
+
+.rc-runners {
+	position: absolute;
+	bottom: 8px;
+	left: 0;
+	display: flex;
+	align-items: flex-end;
+	gap: 18px;
+	pointer-events: auto; /* ...except the robots themselves, so hover can pause them */
+	opacity: 0.6;
+	animation: rc-cross 16s linear infinite;
+	will-change: transform;
+}
+
+.rc-runners:hover,
+.rc-runners:hover * {
+	animation-play-state: paused !important;
+}
+
+.rc-runners svg {
+	display: block;
+	overflow: visible;
+}
+
+/* The whole troupe crosses the screen, left to right. */
+@keyframes rc-cross {
+	from { transform: translateX(-200px); }
+	to { transform: translateX(100vw); }
+}
+
+/* Egg-bot flies like something with mass: she darts forward in bursts and
+   coasts back, banking into each burst and straightening as she brakes. The
+   head and arms follow the body a beat late, and the loops have different,
+   non-harmonic period so the motion never visibly repeats. */
+.rc-egg-wrap {
+	margin-bottom: 12px;
+	transform-origin: 50% 55%;
+	animation: rc-surge 4.3s infinite;
+}
+
+.rc-egg {
+	animation: rc-hover 2.9s ease-in-out infinite;
+}
+
+@keyframes rc-surge {
+	/* coasting back, nearly level */
+	0% { transform: translateX(-7px) rotate(9deg); animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.4); }
+	/* winding up: lean in before the burst */
+	32% { transform: translateX(-9px) rotate(15deg); animation-timing-function: cubic-bezier(0.2, 0.7, 0.3, 1); }
+	/* the burst: fast, deep bank */
+	48% { transform: translateX(9px) rotate(24deg); animation-timing-function: cubic-bezier(0.3, 0, 0.5, 1); }
+	/* braking: overshoot slightly, pitch back */
+	60% { transform: translateX(11px) rotate(6deg); animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1); }
+	/* settle and drift back */
+	100% { transform: translateX(-7px) rotate(9deg); }
+}
+
+@keyframes rc-hover {
+	0%, 100% { transform: translateY(0); }
+	35% { transform: translateY(-3.5px); }
+	70% { transform: translateY(-1px); }
+}
+
+/* Head floats free of the body, so it trails each burst then catches up. */
+.rc-egg-head {
+	transform-box: fill-box;
+	transform-origin: 50% 100%;
+	animation: rc-head-lag 4.3s infinite;
+}
+
+@keyframes rc-head-lag {
+	0%, 34% { transform: translate(0, 0) rotate(0deg); animation-timing-function: ease-out; }
+	50% { transform: translate(-1.5px, 0.8px) rotate(-3deg); animation-timing-function: ease-in-out; }
+	66% { transform: translate(1px, -0.5px) rotate(2deg); animation-timing-function: ease-in-out; }
+	80%, 100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.rc-egg-arm-back {
+	transform-box: fill-box;
+	transform-origin: 100% 0%;
+	animation: rc-arm-back 4.3s ease-in-out infinite;
+}
+
+.rc-egg-arm-front {
+	transform-box: fill-box;
+	transform-origin: 0% 50%;
+	animation: rc-arm-front 4.3s ease-in-out infinite;
+}
+
+@keyframes rc-arm-back {
+	0%, 30%, 100% { transform: rotate(0deg); }
+	52% { transform: rotate(28deg); }
+	70% { transform: rotate(6deg); }
+}
+
+@keyframes rc-arm-front {
+	0%, 30%, 100% { transform: rotate(0deg); }
+	46% { transform: rotate(-14deg); }
+	64% { transform: rotate(4deg); }
+}
+
+/* Speed lines fade in only during the burst. */
+.rc-speed {
+	animation: rc-speed 4.3s ease-in-out infinite;
+}
+
+@keyframes rc-speed {
+	0%, 36%, 72%, 100% { opacity: 0; transform: translateX(0); }
+	50% { opacity: 0.55; transform: translateX(-3px); }
+}
+
+/* Trash-bot rattles along on its treads. */
+.rc-trash-body {
+	animation: rc-rattle 0.3s ease-in-out infinite alternate;
+}
+
+.rc-tread {
+	animation: rc-roll 0.4s linear infinite;
+}
+
+.rc-eyes {
+	transform-box: fill-box;
+	transform-origin: left bottom;
+	animation: rc-peer 2.4s ease-in-out infinite;
+}
+
+@keyframes rc-rattle {
+	from { transform: translateY(0); }
+	to { transform: translateY(-1px); }
+}
+
+@keyframes rc-roll {
+	to { stroke-dashoffset: -9; }
+}
+
+@keyframes rc-peer {
+	0%, 70%, 100% { transform: rotate(0deg); }
+	80% { transform: rotate(-6deg); }
+}
+
+/* Seedling drifts ahead in zero-g: a slow bob, sway and tumble, like it's
+   floating in space rather than touching the ground. */
+.rc-plant-wrap {
+	margin-left: 14px;
+	margin-bottom: 14px;
+	animation: rc-drift 5s ease-in-out infinite;
+}
+
+.rc-plant {
+	transform-origin: 50% 60%;
+	animation: rc-tumble 9s ease-in-out infinite;
+}
+
+.rc-leaf {
+	transform-box: fill-box;
+	transform-origin: right bottom;
+	animation: rc-flap 2.2s ease-in-out infinite alternate;
+}
+
+.rc-leaf-2 {
+	transform-origin: left bottom;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes rc-drift {
+	0%, 100% { transform: translate(0, 0); }
+	25% { transform: translate(5px, -12px); }
+	50% { transform: translate(-2px, -20px); }
+	75% { transform: translate(-6px, -8px); }
+}
+
+@keyframes rc-tumble {
+	0%, 100% { transform: rotate(-10deg); }
+	50% { transform: rotate(14deg); }
+}
+
+@keyframes rc-flap {
+	from { transform: rotate(-5deg); }
+	to { transform: rotate(5deg); }
+}
+
+/* Respect reduced-motion: show a still scene instead of a chase. */
+@media (prefers-reduced-motion: reduce) {
+	.rc-runners,
+	.rc-runners * {
+		animation: none !important;
+	}
+
+	.rc-runners {
+		transform: translateX(6vw);
+	}
+}
