@@ -1,175 +1,109 @@
-/* Robot chase easter egg (components/RobotChase.tsx). */
+/* Robot chase easter egg (components/RobotChase.tsx).
+   Positions, the egg-bot's lean/head/arms and the speed lines are set from JS
+   every frame; this file holds the layer and the small idle loops. */
 
-.rc-stage {
+.rc-layer {
 	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 88px;
-	z-index: 5; /* above content, below the sticky header (z-10) */
-	pointer-events: none; /* never block clicks on the page... */
+	inset: 0;
+	z-index: 40; /* above content and the sticky header, so the boot is always grabbable */
+	pointer-events: none; /* only the boot catches the mouse */
 	overflow: hidden;
-	/* Fade the page content out under the strip so the robots read cleanly. */
-	background: linear-gradient(to top, #F5F2EC 45%, rgba(245, 242, 236, 0));
 }
 
-.dark .rc-stage {
-	background: linear-gradient(to top, #1C1B19 45%, rgba(28, 27, 25, 0));
-}
-
-.rc-ground {
+.rc-actor {
 	position: absolute;
 	left: 0;
-	right: 0;
-	bottom: 8px;
-	border-top: 1px dashed currentColor;
-	opacity: 0.2;
-}
-
-.rc-runners {
-	position: absolute;
-	bottom: 8px;
-	left: 0;
-	display: flex;
-	align-items: flex-end;
-	gap: 18px;
-	pointer-events: auto; /* ...except the robots themselves, so hover can pause them */
-	opacity: 0.6;
-	animation: rc-cross 16s linear infinite;
+	top: 0;
+	transform: translate(-300px, -300px); /* off-screen until JS places it */
 	will-change: transform;
 }
 
-.rc-runners:hover,
-.rc-runners:hover * {
-	animation-play-state: paused !important;
-}
-
-.rc-runners svg {
+.rc-actor svg {
 	display: block;
 	overflow: visible;
 }
 
-/* The whole troupe crosses the screen, left to right. */
-@keyframes rc-cross {
-	from { transform: translateX(-200px); }
-	to { transform: translateX(100vw); }
+.rc-trash-actor svg,
+.rc-egg-actor svg {
+	opacity: 0.65;
 }
 
-/* Egg-bot flies like something with mass: she darts forward in bursts and
-   coasts back, banking into each burst and straightening as she brakes. The
-   head and arms follow the body a beat late, and the loops have different,
-   non-harmonic period so the motion never visibly repeats. */
-.rc-egg-wrap {
-	margin-bottom: 12px;
+.rc-flip {
 	transform-origin: 50% 55%;
-	animation: rc-surge 4.3s infinite;
 }
 
-.rc-egg {
-	animation: rc-hover 2.9s ease-in-out infinite;
+/* ---- The boot: the only interactive piece ---- */
+
+.rc-shoe {
+	width: 40px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: auto;
+	cursor: grab;
+	touch-action: none; /* let touch drags move the boot instead of scrolling */
+	user-select: none;
+	-webkit-user-select: none;
 }
 
-@keyframes rc-surge {
-	/* coasting back, nearly level */
-	0% { transform: translateX(-7px) rotate(9deg); animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.4); }
-	/* winding up: lean in before the burst */
-	32% { transform: translateX(-9px) rotate(15deg); animation-timing-function: cubic-bezier(0.2, 0.7, 0.3, 1); }
-	/* the burst: fast, deep bank */
-	48% { transform: translateX(9px) rotate(24deg); animation-timing-function: cubic-bezier(0.3, 0, 0.5, 1); }
-	/* braking: overshoot slightly, pitch back */
-	60% { transform: translateX(11px) rotate(6deg); animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1); }
-	/* settle and drift back */
-	100% { transform: translateX(-7px) rotate(9deg); }
+.rc-shoe.is-dragging {
+	cursor: grabbing;
 }
 
-@keyframes rc-hover {
-	0%, 100% { transform: translateY(0); }
-	35% { transform: translateY(-3.5px); }
-	70% { transform: translateY(-1px); }
+.rc-shoe svg {
+	opacity: 0.85;
+	transition: transform 0.15s ease;
 }
 
-/* Head floats free of the body, so it trails each burst then catches up. */
-.rc-egg-head {
-	transform-box: fill-box;
-	transform-origin: 50% 100%;
-	animation: rc-head-lag 4.3s infinite;
+.rc-shoe:hover svg {
+	transform: scale(1.12);
 }
 
-@keyframes rc-head-lag {
-	0%, 34% { transform: translate(0, 0) rotate(0deg); animation-timing-function: ease-out; }
-	50% { transform: translate(-1.5px, 0.8px) rotate(-3deg); animation-timing-function: ease-in-out; }
-	66% { transform: translate(1px, -0.5px) rotate(2deg); animation-timing-function: ease-in-out; }
-	80%, 100% { transform: translate(0, 0) rotate(0deg); }
+.rc-shoe.is-dragging svg {
+	transform: scale(1.2) rotate(-6deg);
 }
 
-.rc-egg-arm-back {
-	transform-box: fill-box;
-	transform-origin: 100% 0%;
-	animation: rc-arm-back 4.3s ease-in-out infinite;
+.rc-bubble {
+	position: absolute;
+	bottom: calc(100% + 4px);
+	left: 50%;
+	transform: translateX(-50%);
+	width: max-content;
+	max-width: 180px;
+	padding: 5px 9px;
+	border: 1px solid currentColor;
+	border-radius: 10px;
+	font-size: 13px;
+	line-height: 1.3;
+	text-align: center;
+	pointer-events: none;
+	animation: rc-pop 0.25s ease-out both;
 }
 
-.rc-egg-arm-front {
-	transform-box: fill-box;
-	transform-origin: 0% 50%;
-	animation: rc-arm-front 4.3s ease-in-out infinite;
+/* Little speech-bubble tail */
+.rc-bubble::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	width: 8px;
+	height: 8px;
+	margin-left: -4px;
+	margin-top: -4px;
+	background: inherit;
+	border-right: 1px solid currentColor;
+	border-bottom: 1px solid currentColor;
+	transform: rotate(45deg);
 }
 
-@keyframes rc-arm-back {
-	0%, 30%, 100% { transform: rotate(0deg); }
-	52% { transform: rotate(28deg); }
-	70% { transform: rotate(6deg); }
+@keyframes rc-pop {
+	from { opacity: 0; transform: translateX(-50%) translateY(4px) scale(0.9); }
+	to { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
 }
 
-@keyframes rc-arm-front {
-	0%, 30%, 100% { transform: rotate(0deg); }
-	46% { transform: rotate(-14deg); }
-	64% { transform: rotate(4deg); }
-}
-
-/* Speed lines fade in only during the burst. */
-.rc-speed {
-	animation: rc-speed 4.3s ease-in-out infinite;
-}
-
-@keyframes rc-speed {
-	0%, 36%, 72%, 100% { opacity: 0; transform: translateX(0); }
-	50% { opacity: 0.55; transform: translateX(-3px); }
-}
-
-/* Trash-bot rattles along on its treads. */
-.rc-trash-body {
-	animation: rc-rattle 0.3s ease-in-out infinite alternate;
-}
-
-.rc-tread {
-	animation: rc-roll 0.4s linear infinite;
-}
-
-.rc-eyes {
-	transform-box: fill-box;
-	transform-origin: left bottom;
-	animation: rc-peer 2.4s ease-in-out infinite;
-}
-
-@keyframes rc-rattle {
-	from { transform: translateY(0); }
-	to { transform: translateY(-1px); }
-}
-
-@keyframes rc-roll {
-	to { stroke-dashoffset: -9; }
-}
-
-@keyframes rc-peer {
-	0%, 70%, 100% { transform: rotate(0deg); }
-	80% { transform: rotate(-6deg); }
-}
-
-/* Seedling drifts ahead in zero-g: a slow bob, sway and tumble, like it's
-   floating in space rather than touching the ground. */
+/* Seedling drifts in zero-g: a slow bob, sway and tumble. */
 .rc-plant-wrap {
-	margin-left: 14px;
-	margin-bottom: 14px;
 	animation: rc-drift 5s ease-in-out infinite;
 }
 
@@ -191,9 +125,9 @@
 
 @keyframes rc-drift {
 	0%, 100% { transform: translate(0, 0); }
-	25% { transform: translate(5px, -12px); }
-	50% { transform: translate(-2px, -20px); }
-	75% { transform: translate(-6px, -8px); }
+	25% { transform: translate(3px, -6px); }
+	50% { transform: translate(-1px, -9px); }
+	75% { transform: translate(-3px, -4px); }
 }
 
 @keyframes rc-tumble {
@@ -206,14 +140,77 @@
 	to { transform: rotate(5deg); }
 }
 
-/* Respect reduced-motion: show a still scene instead of a chase. */
-@media (prefers-reduced-motion: reduce) {
-	.rc-runners,
-	.rc-runners * {
-		animation: none !important;
-	}
+/* ---- Egg-bot: hover bob; lean, head and arms come from JS ---- */
 
-	.rc-runners {
-		transform: translateX(6vw);
+.rc-egg {
+	animation: rc-hover 2.9s ease-in-out infinite;
+}
+
+.rc-egg-head {
+	transform-box: fill-box;
+	transform-origin: 50% 100%;
+}
+
+.rc-egg-arm-back {
+	transform-box: fill-box;
+	transform-origin: 100% 0%;
+}
+
+.rc-egg-arm-front {
+	transform-box: fill-box;
+	transform-origin: 0% 50%;
+}
+
+.rc-speed {
+	opacity: 0;
+}
+
+@keyframes rc-hover {
+	0%, 100% { transform: translateY(0); }
+	35% { transform: translateY(-3.5px); }
+	70% { transform: translateY(-1px); }
+}
+
+/* ---- Trash-bot: treads roll and body rattles only while moving ---- */
+
+.rc-trash-body {
+	animation: rc-rattle 0.3s ease-in-out infinite alternate paused;
+}
+
+.rc-tread {
+	animation: rc-roll 0.4s linear infinite paused;
+}
+
+.rc-trash-actor.is-moving .rc-trash-body,
+.rc-trash-actor.is-moving .rc-tread {
+	animation-play-state: running;
+}
+
+.rc-eyes {
+	transform-box: fill-box;
+	transform-origin: left bottom;
+	animation: rc-peer 3.1s ease-in-out infinite;
+}
+
+@keyframes rc-rattle {
+	from { transform: translateY(0); }
+	to { transform: translateY(-1px); }
+}
+
+@keyframes rc-roll {
+	to { stroke-dashoffset: -9; }
+}
+
+@keyframes rc-peer {
+	0%, 70%, 100% { transform: rotate(0deg); }
+	80% { transform: rotate(-6deg); }
+}
+
+/* Reduced motion: keep the drag-and-follow (it's user-driven) but drop the
+   idle loops. */
+@media (prefers-reduced-motion: reduce) {
+	.rc-layer *,
+	.rc-layer *::after {
+		animation: none !important;
 	}
 }
