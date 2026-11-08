@@ -1,5 +1,29 @@
 [
   {
+    "id": 0,
+    "author": "H. Muriki, G. Aravindan, Y. Zheng, and S. Chernova",
+    "title": "Evaluating Long-Horizon Robot Planning under Uncertainty",
+    "conference": "4th Workshop on Learning Effective Abstractions for Planning (LEAP), CoRL 2026 in Austin, USA",
+    "links": [
+      {
+        "name": "PDF",
+        "url": "https://arxiv.org/pdf/2610.17326"
+      },
+      {
+        "name": "Project Page",
+        "url": "https://harshmuriki.github.io/leap-planning-uncertainty/"
+      },
+      {
+        "name": "Github",
+        "url": "https://github.com/harshmuriki/partnr-planner"
+      },
+      {
+        "name": "Poster",
+        "url": "https://harshmuriki.github.io/leap-planning-uncertainty/static/poster.pdf"
+      }
+    ]
+  },
+  {
     "id": 1,
     "author": "H. Muriki, A. Asfour, R. George, J. Knapp-Wilson, D. Chavez, and A. Hu",
     "title": "Point Cloud-Based Deep Learning for Automated Dormant Pruning of Peach Trees",
