@@ -8,9 +8,10 @@ const PublicationList = (): JSX.Element => {
       <h2 className="text-xl font-bold mt-12 mb-4">Publications</h2>
       <div>
         {[...data]
+          // Lower id = newer, matching the full Publications page
           .sort(
             (a: { id?: number }, b: { id?: number }) =>
-              (b.id ?? 0) - (a.id ?? 0)
+              (a.id ?? 0) - (b.id ?? 0)
           )
           .slice(0, 4)
           .map((publication, index) => (
