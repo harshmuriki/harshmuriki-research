@@ -136,8 +136,9 @@ const bubbleText: Record<Exclude<Bubble, undefined>, string> = {
 };
 
 const HINT_KEY = 'rc-hint-dismissed';
+const HIDDEN_KEY = 'rc-hidden';
 
-const RobotChase = (): JSX.Element => {
+const ChaseScene = (): JSX.Element => {
 	const shoeRef = useRef<HTMLDivElement>(null);
 	const trashRef = useRef<HTMLDivElement>(null);
 	const eggRef = useRef<HTMLDivElement>(null);
@@ -348,6 +349,53 @@ const RobotChase = (): JSX.Element => {
 				<div className="rc-plant-wrap"><Seedling/></div>
 			</div>
 		</div>
+	);
+};
+
+// Visitors can hide the robots; the choice is remembered in this browser.
+// While hidden, the scene is unmounted so its animation loop stops entirely.
+const RobotChase = (): JSX.Element | null => {
+	const [mounted, setMounted] = useState(false);
+	const [hidden, setHidden] = useState(false);
+
+	useEffect(() => {
+		try {
+			setHidden(localStorage.getItem(HIDDEN_KEY) === '1');
+		} catch {}
+
+		setMounted(true);
+	}, []);
+
+	const toggle = (): void => {
+		const next = !hidden;
+		setHidden(next);
+		try {
+			if (next) {
+				localStorage.setItem(HIDDEN_KEY, '1');
+			} else {
+				localStorage.removeItem(HIDDEN_KEY);
+			}
+		} catch {}
+	};
+
+	// Render nothing on the server so the stored preference never flashes.
+	if (!mounted) {
+		return null;
+	}
+
+	return (
+		<>
+			{!hidden && <ChaseScene/>}
+			<button
+				type="button"
+				className="rc-toggle text-ink dark:text-bone bg-paper dark:bg-charcoal"
+				onClick={toggle}
+				aria-pressed={!hidden}
+				title={hidden ? 'Bring back the robots' : 'Hide the robots'}
+			>
+				{hidden ? 'Show robots' : 'Hide robots'}
+			</button>
+		</>
 	);
 };
 

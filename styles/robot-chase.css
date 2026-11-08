@@ -206,6 +206,28 @@
 	80% { transform: rotate(-6deg); }
 }
 
+/* ---- Visitor toggle: small, quiet, bottom-left ---- */
+
+.rc-toggle {
+	position: fixed;
+	left: 12px;
+	bottom: 12px;
+	z-index: 41;
+	padding: 3px 9px;
+	border: 1px solid currentColor;
+	border-radius: 999px;
+	font-size: 12px;
+	line-height: 1.4;
+	opacity: 0.45;
+	cursor: pointer;
+	transition: opacity 0.15s ease;
+}
+
+.rc-toggle:hover,
+.rc-toggle:focus-visible {
+	opacity: 1;
+}
+
 /* Reduced motion: keep the drag-and-follow (it's user-driven) but drop the
    idle loops. */
 @media (prefers-reduced-motion: reduce) {
