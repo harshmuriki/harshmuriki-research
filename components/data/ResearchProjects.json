@@ -1,5 +1,11 @@
 [
   {
+    "title": "Evaluating Long-Horizon Robot Planning under Uncertainty",
+    "info": "LEAP Workshop @ CoRL 2026. A benchmark of seven long-horizon household tasks in Habitat that vary the robot's initial memory and the environment, evaluating ReAct, VLM-TAMP, and Tru-POMDP across 1,350 episodes.",
+    "link": "https://harshmuriki.github.io/leap-planning-uncertainty/",
+    "image": "/images/leap_planning.gif"
+  },
+  {
     "title": "Task and Motion Planning (TAMP) for Households",
     "info": "Working on replanning strategies in TAMP + households domains using VLAs and VLMs for high-level planning.",
     "link": "https://github.com/harshmuriki",
